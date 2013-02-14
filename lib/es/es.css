@@ -391,7 +391,7 @@ SPAN.jsonPretty-boolean { color: purple; }
 .clusterOverview-cluster TH,
 .clusterOverview-cluster TD {
 	vertical-align: top;
-	padding: 2px 20px;
+	padding: 2px 8px;
 }
 
 .clusterOverview TH {
@@ -406,12 +406,19 @@ SPAN.jsonPretty-boolean { color: purple; }
 }
 
 .clusterOverview-node.master {
-	background: #fff8dd;
+	background: #eed;
+}
+
+TR.clusterOverview-node {
+    border: 1px solid #ccc;
+}
+TD.clusterOverview-routing {
+    border: 1px solid #ccc;
 }
 
 .clusterOverview-title {
 	font-weight: bold;
-	font-size: 140%;
+	font-size: 9pt;
 }
 .clusterOverview-routing {
 	position: relative;
@@ -420,18 +427,18 @@ SPAN.jsonPretty-boolean { color: purple; }
 .clusterOverview-replica {
 	cursor: pointer;
 	float: left;
-	height: 40px;
-	width: 31px;
-	margin: 4px;
-	border: 2px solid #444;
-	font-size: 32px;
+	height: 32px;
+	width: 24px;
+	border: 3px solid #99DD88;
+	font-size: 12px;
 	text-align: center;
 	letter-spacing: -5px;
 	text-indent: -7px;
+	margin: 1px;
 }
 .clusterOverview-replica.primary {
-	border-width: 4px;
-	margin: 2px;
+	border: 3px solid #444;
+	margin: 1px;
 }
 
 .clusterOverview-nullReplica {
